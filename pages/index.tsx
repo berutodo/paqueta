@@ -1,3 +1,4 @@
+import { HeaderComponent } from "../components/Head"
 export default function Page() {
-    return <h1>Paqueta</h1>
+    return <HeaderComponent/>
   }

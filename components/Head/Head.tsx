@@ -13,8 +13,8 @@ export function HeaderComponent (){
             <div className="bg-[#FF8A29] p-2 text-white flex justify-around">
                 <span>Loja de Calçados e Moda Online</span>
                 <div className="flex flex-row gap-6">
-                    <span className="flex flex-row gap-2"><Image src={headphoneSvg} width={16} height={16} alt="headphone" /><h1>Fale conosco</h1></span>
-                    <span className="flex flex-row gap-2"><Image src={placeSvg} width={16} height={16} alt="place" /><h1>Encontrar uma loja fisica</h1></span>
+                    <span className="flex flex-row gap-2"><Image src={headphoneSvg} width={16} height={16} alt="headphone" /><a>Fale conosco</a></span>
+                    <span className="flex flex-row gap-2"><Image src={placeSvg} width={16} height={16} alt="place" /><a>Encontrar uma loja fisica</a></span>
                 </div>
             </div>
             <div>

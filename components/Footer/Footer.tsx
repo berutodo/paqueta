@@ -1,12 +1,14 @@
 import Image from "next/image"
 import PaquetaSvg from "public/image40.svg"
+import { Highlight } from "../Highlight"
 export function Footer () {
     return(
         <footer>
+            <Highlight/>
             <div className="flex gap-8">
-                <div className="text-sm text-[#383838]">
+                <div className="text-sm text-[#383838] flex flex-col cursor-auto">
                     <h1 className="text-black text-lg">Institucional</h1>
-                    <a>Quem Somos</a>
+                    <a href="">Quem Somos</a>
                     <a>Nossas Lojas</a> 
                     <a>Soluções Corporativas</a> 
                     <a>Política de Privacidade</a>
@@ -26,7 +28,7 @@ export function Footer () {
                 <div className="text-sm text-[#383838]">
                     <div>
                         <h1 className="text-black text-lg">Atendimento</h1>
-                        <p>Fale Conosco</p>
+                        <a>Fale Conosco</a>
                     </div>
                     <div>
                         <h1 className="text-black text-lg">Endereço</h1>

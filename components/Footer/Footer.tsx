@@ -6,22 +6,22 @@ export function Footer () {
             <div className="flex gap-8">
                 <div className="text-sm text-[#383838]">
                     <h1 className="text-black text-lg">Institucional</h1>
-                    <p>Quem Somos</p>
-                    <p>Nossas Lojas</p> 
-                    <p>Soluções Corporativas</p> 
-                    <p>Política de Privacidade</p>
-                    <p>Contrato de Compra e Venda</p>
-                    <p>Crédito Pessoal</p>
+                    <a>Quem Somos</a>
+                    <a>Nossas Lojas</a> 
+                    <a>Soluções Corporativas</a> 
+                    <a>Política de Privacidade</a>
+                    <a>Contrato de Compra e Venda</a>
+                    <a>Crédito Pessoal</a>
                 </div>
                 <div className="text-sm text-[#383838]">
                     <h1 className="text-black text-lg">Ajuda e Suporte</h1>
-                    <p>Troca e Devolução</p>
-                    <p>2ª Via do Boleto</p>
-                    <p>Detalhamento de Fatura</p>
-                    <p>Entregas</p>
-                    <p>Meus Pedidos</p>
-                    <p>Dúvidas Frequentes</p>
-                    <p>Status do Pedido</p>
+                    <a>Troca e Devolução</a>
+                    <a>2ª Via do Boleto</a>
+                    <a>Detalhamento de Fatura</a>
+                    <a>Entregas</a>
+                    <a>Meus Pedidos</a>
+                    <a>Dúvidas Frequentes</a>
+                    <a>Status do Pedido</a>
                 </div>
                 <div className="text-sm text-[#383838]">
                     <div>

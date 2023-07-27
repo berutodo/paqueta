@@ -21,9 +21,9 @@ export function HeaderComponent (){
                 <div className="flex justify-around p-6 items-center">
                     <Image src={paquetaImage} width={297} height={86} alt="Paqueta"/>
                     <div className="flex flex-row gap-6">
-                        <span className="flex flex-row gap-2"><Image src={heartSvg} width={16} height={16} alt="heart" /><h1>Lista de desejo</h1></span>
-                        <span className="flex flex-row gap-2"><Image src={bagSvg} width={16} height={16} alt="bag" /><h1>Sacola</h1></span>
-                        <span className="flex flex-row gap-2"><Image src={userSvg} width={16} height={16} alt="login" /><h1>Entrar</h1></span>
+                        <span className="flex flex-row gap-2"><Image src={heartSvg} width={16} height={16} alt="heart" /><a>Lista de desejo</a></span>
+                        <span className="flex flex-row gap-2"><Image src={bagSvg} width={16} height={16} alt="bag" /><a>Sacola</a></span>
+                        <span className="flex flex-row gap-2"><Image src={userSvg} width={16} height={16} alt="login" /><a>Entrar</a></span>
 
                     </div>
                 </div>

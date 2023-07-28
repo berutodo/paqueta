@@ -1,11 +1,12 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import { Product } from "./Highlight.types";
 
 export function Highlight () {
-    const [shoesData, setShoesData] = useState([]);
+    type myProduct = Product[]
+    const [shoesData, setShoesData] = useState<myProduct>([]); 
 
   useEffect(() => {
-    // Function to fetch data from the API
     const fetchData = async () => {
       try {
         const response = await fetch('https://api.brchallenges.com/api/paqueta/shoes');

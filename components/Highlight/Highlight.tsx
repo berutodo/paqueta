@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { Product } from "./Highlight.types";
+import { Carousel } from '@mantine/carousel';
+import Link from "next/link";
 
 export function Highlight () {
     type myProduct = Product[]
@@ -19,13 +21,29 @@ export function Highlight () {
         console.error('Error fetching data:', error);
       }
     };
-
-    // Call the fetch function
     fetchData();
   }, []);
     return (
-        <>
-           {shoesData.map((e): any => <Image alt="" src={e.image} width={100} height={50} />)}
-        </>
+        <div className="w-2/3 mx-auto">
+        <Carousel
+        withIndicators={true}
+        height={412}
+        slideSize="25%"
+        slideGap="md"
+        loop
+        align="start"
+        slidesToScroll={2}
+      >
+        {shoesData.map((e): any => <Carousel.Slide>
+          <div className="w-[307px] h-[412px] shadow-lg flex flex-col items-center text-left p-4">
+            <Image alt="" src={e.image} width={210} height={149} />
+            <h1 className="text-lg">{e.name}</h1>
+            <p>{e.price.value}</p>
+            <Link href={`/shoes/[id]`}>comprar</Link>
+            </div>
+          </Carousel.Slide>)}
+      </Carousel>
+           
+        </div>
     )
 }

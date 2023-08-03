@@ -8,22 +8,22 @@ export function Footer () {
             <div className="flex gap-8">
                 <div className="text-sm text-[#383838] flex flex-col cursor-auto">
                     <h1 className="text-black text-lg">Institucional</h1>
-                    <a href="">Quem Somos</a>
-                    <a>Nossas Lojas</a> 
-                    <a>Soluções Corporativas</a> 
-                    <a>Política de Privacidade</a>
-                    <a>Contrato de Compra e Venda</a>
-                    <a>Crédito Pessoal</a>
+                    <a href="#">Quem Somos</a>
+                    <a href="#">Nossas Lojas</a> 
+                    <a href="#">Soluções Corporativas</a> 
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Contrato de Compra e Venda</a>
+                    <a href="#">Crédito Pessoal</a>
                 </div>
                 <div className="text-sm text-[#383838]">
                     <h1 className="text-black text-lg">Ajuda e Suporte</h1>
-                    <a>Troca e Devolução</a>
-                    <a>2ª Via do Boleto</a>
-                    <a>Detalhamento de Fatura</a>
-                    <a>Entregas</a>
-                    <a>Meus Pedidos</a>
-                    <a>Dúvidas Frequentes</a>
-                    <a>Status do Pedido</a>
+                    <a href="#">Troca e Devolução</a>
+                    <a href="#">2ª Via do Boleto</a>
+                    <a href="#">Detalhamento de Fatura</a>
+                    <a href="#">Entregas</a>
+                    <a href="#">Meus Pedidos</a>
+                    <a href="#">Dúvidas Frequentes</a>
+                    <a href="#">Status do Pedido</a>
                 </div>
                 <div className="text-sm text-[#383838]">
                     <div>

@@ -23,6 +23,7 @@ export function Highlight () {
     };
     fetchData();
   }, []);
+  
     return (
         <div className="w-2/3 mx-auto">
         <Carousel
@@ -39,7 +40,10 @@ export function Highlight () {
             <Image alt="" src={e.image} width={210} height={149} />
             <h1 className="text-lg">{e.name}</h1>
             <p>{e.price.value}</p>
-            <Link href={`/shoes/[id]`}>comprar</Link>
+            <Link href={{
+              pathname: "/shoes/[id]",
+              query: {id : e.id},
+            }}>comprar</Link>
             </div>
           </Carousel.Slide>)}
       </Carousel>

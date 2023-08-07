@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { Product } from "./Highlight.types";
+import { Product } from "../types/Highlight.types";
 import { Carousel } from '@mantine/carousel';
 import Link from "next/link";
 

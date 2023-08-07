@@ -26,27 +26,27 @@ export function Highlight () {
   
     return (
         <div className="w-2/3 mx-auto">
-        <Carousel
-        withIndicators={true}
-        height={412}
-        slideSize="25%"
-        slideGap="md"
-        loop
-        align="start"
-        slidesToScroll={2}
-      >
-        {shoesData.map((e): any => <Carousel.Slide>
-          <div className="w-[307px] h-[412px] shadow-lg flex flex-col items-center text-left p-4">
-            <Image alt="" src={e.image} width={210} height={149} />
-            <h1 className="text-lg">{e.name}</h1>
-            <p>{e.price.value}</p>
-            <Link href={{
-              pathname: "/shoes/[id]",
-              query: {id : e.id},
-            }}>comprar</Link>
-            </div>
-          </Carousel.Slide>)}
-      </Carousel>
+          <Carousel
+          withIndicators={true}
+          height={412}
+          slideSize="25%"
+          slideGap="md"
+          loop
+          align="start"
+          slidesToScroll={2}
+        >
+          {shoesData.map((e): any => <Carousel.Slide>
+            <div className="w-[307px] h-[412px] shadow-lg flex flex-col items-center text-left p-4">
+              <Image alt="" src={e.image} width={210} height={149} />
+              <h1 className="text-lg">{e.name}</h1>
+              <p>{e.price.value}</p>
+              <Link href={{
+                pathname: "/product/[id]",
+                query: {id : e.id},
+              }}>comprar</Link>
+              </div>
+            </Carousel.Slide>)}
+        </Carousel>
            
         </div>
     )

@@ -1,10 +1,17 @@
 import { GetStaticPaths } from "next";
 import { Product } from "../../../components/types/Highlight.types";
 import ProductComponent from "../../../components/Product/Product";
+import { HeaderComponent } from "../../../components/Head";
+import { Footer } from "../../../components/Footer";
 
 export default function Page({ params, dataFetch}: { params: { id: string}, dataFetch: Product }) {
     return (
+      <>
+      <HeaderComponent/>
       <ProductComponent dataFetch={dataFetch}/> 
+      <Footer/>
+      </>
+      
     )
 }
 
@@ -36,7 +43,7 @@ export async function getStaticProps({ params }) {
 export const getStaticPaths: GetStaticPaths<{ slug: string }> = async () => {
 
   return {
-      paths: [], //indicates that no page needs be created at build time
-      fallback: 'blocking' //indicates the type of fallback
+      paths: [],
+      fallback: 'blocking',
   }
 }

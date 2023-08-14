@@ -5,7 +5,7 @@ export function Footer () {
     return(
         <footer>
             <Highlight/>
-            <div className="flex gap-8">
+            <div className="flex mt-10 gap-8">
                 <div className="text-sm text-[#383838] flex flex-col cursor-auto">
                     <h1 className="text-black text-lg">Institucional</h1>
                     <a href="#">Quem Somos</a>

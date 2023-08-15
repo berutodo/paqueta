@@ -28,7 +28,7 @@ export function Footer () {
                 <div className="text-sm text-[#383838]">
                     <div>
                         <h1 className="text-black text-lg">Atendimento</h1>
-                        <a>Fale Conosco</a>
+                        <a href="#">Fale Conosco</a>
                     </div>
                     <div>
                         <h1 className="text-black text-lg">Endereço</h1>

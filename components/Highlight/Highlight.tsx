@@ -40,7 +40,7 @@ export function Highlight () {
               <Image alt="" src={e.image} width={210} height={149} />
               <h1 className="text-lg">{e.name}</h1>
               <p>{e.price.value}</p>
-              <Link href={{
+              <Link className="bottom-8 absolute flex justify-center w-3/4 p-1 rounded-sm bg-orange-400 text-white font-semibold" href={{
                 pathname: "/product/[id]",
                 query: {id : e.id},
               }}>comprar</Link>

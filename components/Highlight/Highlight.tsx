@@ -35,12 +35,14 @@ export function Highlight () {
           align="start"
           slidesToScroll={2}
         >
-          {shoesData.map((e): any => <Carousel.Slide>
-            <div className="w-[307px] h-[412px] shadow-lg flex flex-col items-center text-left p-4">
+          {shoesData.map((e, index): any => <Carousel.Slide>
+            <div key={index} className="w-[307px] h-[412px] shadow-lg drop-shadow-md flex flex-col items-center text-left p-2">
               <Image alt="" src={e.image} width={210} height={149} />
-              <h1 className="text-lg">{e.name}</h1>
-              <p>{e.price.value}</p>
-              <Link className="bottom-8 absolute flex justify-center w-3/4 p-1 rounded-sm bg-orange-400 text-white font-semibold" href={{
+              <div className="w-3/4">
+                <h1 className="text-lg">{e.name}</h1>
+                <p>R$ {e.price.value}</p>
+              </div>
+              <Link className="bottom-8 absolute uppercase flex justify-center w-3/4 p-1 rounded-sm bg-orange-400 text-white font-semibold" href={{
                 pathname: "/product/[id]",
                 query: {id : e.id},
               }}>comprar</Link>

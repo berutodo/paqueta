@@ -1,4 +1,6 @@
+import Image from "next/image"
 import useCart from "../hooks/useCart"
+import deleteSVG from "../public/icons/delete.svg"
 export default function Checkout (){
     const {cart,addItemToCart, removeItemFromCart} = useCart()
     return(
@@ -7,10 +9,11 @@ export default function Checkout (){
             <button onClick={() => addItemToCart("123132", 10)}>Adicionar item</button>
             <h1>Sacola de compras</h1>
             {cart.map(e => (
-            <>
-            <p>Id do produto : {e.productId}</p><p>Quantidade: {e.quantity}</p>
-            <button onClick={() => removeItemFromCart(e.productId)}>Remover item do carrinho</button>
-            </>))}
+            <div className="w-96 h-44 border-2">
+                <p>Id do produto : {e.productId}</p><p>Quantidade: {e.quantity}</p>
+                <button onClick={() => removeItemFromCart(e.productId)}><span><Image width={25} height={25} src={deleteSVG} alt="" /></span></button>
+            </div>
+            ))}
         </main>
     )
 }

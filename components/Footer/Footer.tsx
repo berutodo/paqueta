@@ -15,7 +15,7 @@ export function Footer () {
                     <a href="#">Contrato de Compra e Venda</a>
                     <a href="#">Crédito Pessoal</a>
                 </div>
-                <div className="text-sm text-[#383838]">
+                <div className="text-sm text-[#383838] flex flex-col cursor-auto">
                     <h1 className="text-black text-lg">Ajuda e Suporte</h1>
                     <a href="#">Troca e Devolução</a>
                     <a href="#">2ª Via do Boleto</a>
@@ -25,7 +25,7 @@ export function Footer () {
                     <a href="#">Dúvidas Frequentes</a>
                     <a href="#">Status do Pedido</a>
                 </div>
-                <div className="text-sm text-[#383838]">
+                <div className="text-sm text-[#383838] flex flex-col cursor-auto">
                     <div>
                         <h1 className="text-black text-lg">Atendimento</h1>
                         <a href="#">Fale Conosco</a>

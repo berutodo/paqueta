@@ -1,5 +1,14 @@
 import Image from "next/image"
 import PaquetaSvg from "public/image40.svg"
+
+import BoletoSVG from "public/icons/payment/boleto.svg"
+import ItauSVG from "public/icons/payment/itau.svg"
+import VisaSVG from "public/icons/payment/visa.svg"
+import EloSVG from "public/icons/payment/elo.svg"
+import MastercardSVG from "public/icons/payment/mastercard.svg"
+
+import InstagramSVG from "public/icons/socials/instagram.svg"
+
 import { Highlight } from "../Highlight"
 export function Footer () {
     return(
@@ -37,6 +46,24 @@ export function Footer () {
                     <div>
                         <h1 className="text-black text-lg">Trabalhe Conosco</h1>
                         <a href="">Venha crescer com a Paquetá!</a>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h1 className="text-black text-lg">Formas de pagamento</h1>
+                        <div className="grid grid-cols-3 gap-4">
+                            <Image alt="Boleto" src={BoletoSVG} width={33} height={33} />
+                            <Image alt="Itau" src={ItauSVG} width={33} height={33} />
+                            <Image alt="Visa" src={VisaSVG} width={45} height={16} />
+                            <Image alt="Elo" src={EloSVG} width={45} height={16} />
+                            <Image alt="Mastercard" src={MastercardSVG} width={45} height={16} />
+                        </div>
+                    </div>
+                    <div>
+                        <h1 className="text-black text-lg">Redes Sociais</h1>
+                        <div>
+                            <Image width={25} height={25} src={InstagramSVG} alt="Instagram" />
+                        </div>
                     </div>
                 </div>
             </div>

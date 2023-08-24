@@ -5,6 +5,7 @@ import placeSvg from "public/icons/place.svg"
 import heartSvg from "public/icons/heart.svg"
 import bagSvg from "public/icons/bag.svg"
 import userSvg from "public/icons/user.svg"
+import Link from "next/link";
 
 
 export function HeaderComponent (){
@@ -19,10 +20,10 @@ export function HeaderComponent (){
             </div>
             <div>
                 <div className="flex justify-around p-6 items-center">
-                    <Image src={paquetaImage} width={297} height={86} alt="Paqueta"/>
+                    <Link href={"/"}><Image src={paquetaImage} width={297} height={86} alt="Paqueta"/></Link> 
                     <div className="flex flex-row gap-6">
-                        <span className="flex flex-row items-end gap-2"><Image src={heartSvg} width={28} height={27} alt="heart" /><a>Lista de desejo</a></span>
-                        <span className="flex flex-row items-end gap-2"><Image src={bagSvg} width={28} height={27} alt="bag" /><span className="relative bottom-5 right-4 min-w-max w-4 h-4 rounded-xl bg-blue-400"></span><a>Sacola</a></span>
+                        <span className="flex flex-row items-end gap-2"><Image src={heartSvg} width={28} height={27} alt="heart" /><span className="flex justify-center items-center relative bottom-5 right-4 min-w-max w-4 h-4 rounded-xl bg-orange-400 text-white"></span><a>Lista de desejo</a></span>
+                        <span className="flex flex-row items-end gap-2"><Image src={bagSvg} width={28} height={27} alt="bag" /><span className="flex justify-center items-center relative bottom-5 right-4 min-w-max w-4 h-4 rounded-xl bg-orange-400 text-white"><p>1</p></span><a>Sacola</a></span>
                         <span className="flex flex-row items-end gap-2"><Image src={userSvg} width={28} height={27} alt="login" /><a>Entrar</a></span>
 
                     </div>

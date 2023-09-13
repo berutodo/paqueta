@@ -3,6 +3,7 @@ import useCart from "../hooks/useCart"
 import deleteSVG from "../public/icons/delete.svg"
 export default function Checkout (){
     const {cart,addItemToCart, removeItemFromCart} = useCart()
+    const [productIds] = cart.map( e => e.productId)
     return(
         <main>
             {cart.length}

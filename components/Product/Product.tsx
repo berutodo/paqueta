@@ -1,8 +1,10 @@
 import Image from "next/image";
 import { Product } from "../types/Highlight.types";
 import heartSvg from "public/icons/heart.svg"
+import useCart from "../../hooks/useCart";
 
 export default function ProductComponent ({dataFetch}: {dataFetch: Product}){
+    const {cart,addItemToCart, removeItemFromCart} = useCart()
     const numeracao = [35,36,37,38,39,40,42]
     console.log(dataFetch)
     function discountPrice(price: number, discount: number){
@@ -32,7 +34,7 @@ export default function ProductComponent ({dataFetch}: {dataFetch: Product}){
                 <div className="w-11 h-11 border-2 flex items-center justify-center cursor-pointer">{e}</div>
                 ))}
               </div>
-              <a className="uppercase text-white text-2xl text-center rounded-md p-3 w-full bg-gradient-to-br from-orange-500 to-orange-300" href="#">comprar</a>
+              <a onClick={() => addItemToCart(dataFetch.id, 1)} className="uppercase text-white text-2xl text-center rounded-md p-3 w-full bg-gradient-to-br from-orange-500 to-orange-300" href="#">comprar</a>
           </div>
         </div>
         <div className="w-11/12 flex flex-col mx-auto gap-3">

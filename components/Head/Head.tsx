@@ -35,7 +35,7 @@ export function HeaderComponent (){
 
                     </div>
                 </div>
-                <div className="flex text-black font-medium text-lg justify-around">
+                <div className="flex text-black font-medium text-lg justify-around mb-4">
                     <a>Novidades</a>
                     <a>Feminino</a>
                     <a>Masculino</a>

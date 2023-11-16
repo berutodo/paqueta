@@ -9,11 +9,9 @@ import MastercardSVG from "public/icons/payment/mastercard.svg"
 
 import InstagramSVG from "public/icons/socials/instagram.svg"
 
-import { Highlight } from "../Highlight"
 export function Footer () {
     return(
         <footer>
-            <Highlight/>
             <div className="flex flex-col sm:flex-row mt-10 gap-8">
                 <div className="text-sm text-[#383838] flex flex-col cursor-auto">
                     <h1 className="text-black text-lg">Institucional</h1>

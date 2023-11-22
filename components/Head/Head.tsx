@@ -24,7 +24,7 @@ export function HeaderComponent (){
                 <div className="flex justify-around p-6 items-center">
                     <Link href={"/"}><Image src={paquetaImage} width={297} height={86} alt="Paqueta"/></Link> 
                     <div className="flex flex-row gap-6">
-                        <span className="flex flex-row items-end gap-2"><Image src={heartSvg} width={28} height={27} alt="heart" /><span className="flex justify-center items-center relative bottom-5 right-4 min-w-max w-4 h-4 rounded-xl bg-orange-400 text-white"></span><a>Lista de desejo</a></span>
+                        <span className="flex flex-row items-end gap-2"><Image src={heartSvg} width={28} height={27} alt="heart" /><span className="flex invisible justify-center items-center relative bottom-5 right-4 min-w-max w-4 h-4 rounded-xl bg-orange-400 text-white"></span><a>Lista de desejo</a></span>
                         
                         <span className="flex flex-row items-end gap-2"><Image src={bagSvg} width={28} height={27} alt="bag" />
                         {cart.length > 0 && <span className="flex justify-center items-center relative bottom-5 right-4 min-w-max w-4 h-4 rounded-xl bg-orange-400 text-white"><p>{cart.length}</p>
